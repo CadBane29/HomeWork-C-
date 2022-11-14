@@ -6,19 +6,34 @@
 // 8 -> 2, 4, 6, 8
 
 
-Console.WriteLine("Введите число N.");
-int n = Convert.ToInt32(Console.ReadLine());
-int count = 1;
-while (count <= n)
+// Console.WriteLine("Введите число N.");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int count = 1;
+// while (count <= n)
+// {
+//     if (count % 2 == 0)
+//     {
+//         Console.Write($"{count}, ");
+//         count = count + 1;
+//     }
+//     else if (count % 1 == 0)
+//     {
+//         Console.Write(" ");
+//         count = count + 1;
+//     }
+// }
+
+Console.WriteLine("Введите число: ");
+string inputN = Console.ReadLine() ?? "";
+double numberN = Convert.ToDouble(inputN);
+int interim = 1;
+
+Console.Write($" {numberN} -> ");
+while (interim <= numberN)
 {
-    if (count % 2 == 0)
+    if (interim % 2 == 0)
     {
-        Console.Write($"{count}, ");
-        count = count + 1;
+        Console.Write($" {interim}, ");
     }
-    else if (count % 1 == 0)
-    {
-        Console.Write(" ");
-        count = count + 1;
-    }
+interim++;
 }
