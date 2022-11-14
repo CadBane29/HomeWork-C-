@@ -5,21 +5,20 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-Console.WriteLine("Введите четное число N.");
-int N = Convert.ToInt32(Console.ReadLine());
-int count = 0;
-while (N > 2)
+
+Console.WriteLine("Введите число N.");
+int n = Convert.ToInt32(Console.ReadLine());
+int count = 1;
+while (count <= n)
 {
-    if (N % 2 == 0)
+    if (count % 2 == 0)
     {
-        Console.Write($"{N}, ");
-        N = N - 2;
-        count++;
+        Console.Write($"{count}, ");
+        count = count + 1;
     }
-    else
+    else if (count % 1 == 0)
     {
-        Console.WriteLine("Вы ввели неккоректное число: ");
-        break;
+        Console.Write(" ");
+        count = count + 1;
     }
 }
-Console.Write(N);
