@@ -6,34 +6,34 @@
 // 8 -> 2, 4, 6, 8
 
 
-// Console.WriteLine("Введите число N.");
-// int n = Convert.ToInt32(Console.ReadLine());
-// int count = 1;
-// while (count <= n)
-// {
-//     if (count % 2 == 0)
-//     {
-//         Console.Write($"{count}, ");
-//         count = count + 1;
-//     }
-//     else if (count % 1 == 0)
-//     {
-//         Console.Write(" ");
-//         count = count + 1;
-//     }
-// }
-
-Console.WriteLine("Введите число: ");
-string inputN = Console.ReadLine() ?? "";
-double numberN = Convert.ToDouble(inputN);
-int interim = 1;
-
-Console.Write($" {numberN} -> ");
-while (interim <= numberN)
+Console.WriteLine("Введите число N.");
+int n = Convert.ToInt32(Console.ReadLine());
+int count = -n; // If count = -n, terminal output of -n to n, example: -10, -8, -6, -4, -2, 0, 2, 4, 6, 8, 10,
+while (count <= n)
 {
-    if (interim % 2 == 0)
+    if (count % 2 == 0)
     {
-        Console.Write($" {interim}, ");
+        Console.Write($"{count},");
+        count = count + 1;
     }
-interim++;
+    else if (count % 1 == 0)
+    {
+        Console.Write(" ");
+        count = count + 1;
+    }
 }
+
+// Console.WriteLine("Введите число: ");
+// string inputN = Console.ReadLine() ?? "";
+// double numberN = Convert.ToDouble(inputN);
+// int interim = 1;
+
+// Console.Write($" {numberN} -> ");
+// while (interim <= numberN)
+// {
+//     if (interim % 2 == 0)
+//     {
+//         Console.Write($" {interim}, ");
+//     }
+// interim++;
+// }
