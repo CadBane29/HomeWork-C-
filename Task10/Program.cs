@@ -13,8 +13,8 @@ int secondNumber = Convert.ToInt32(Console.ReadLine());
 int OneOfThem (int fullNumber)
 {
     int result = fullNumber % 100 / 10;
-    return result;
+    return result;   
 }
 int oneOfThem = OneOfThem(secondNumber);
 
-Console.WriteLine($"Вторая цифра вашего числа: {oneOfThem}");
+Console.WriteLine(secondNumber > 0 ? $"Вторая цифра вашего числа: {oneOfThem}" : "Пользователь, введите другое число.");
