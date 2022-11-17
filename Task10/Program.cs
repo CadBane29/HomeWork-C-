@@ -17,4 +17,4 @@ int OneOfThem (int fullNumber)
 }
 int oneOfThem = OneOfThem(secondNumber);
 
-Console.WriteLine(secondNumber > 0 ? $"Вторая цифра вашего числа: {oneOfThem}" : "Пользователь, введите другое число.");
+Console.WriteLine(secondNumber < 1000 ? $"Вторая цифра вашего числа: {oneOfThem}" : "Пользователь, введите другое число.");
