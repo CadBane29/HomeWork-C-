@@ -9,6 +9,6 @@
 Console.WriteLine("Пользователь, введите день недели: ");
 int dayWeek = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(dayWeek < 0 || dayWeek > 7 ? "Введите другое число, от 1 до 7." : dayWeek == 6 || dayWeek == 7 
+Console.WriteLine(dayWeek < 1 || dayWeek > 7 ? "Введите другое число, от 1 до 7." : dayWeek == 6 || dayWeek == 7 
 ? "Сегодня выходной, расслабляйтесь!" : "Сегодня рабочий день, собирайтесь на работу.");
 

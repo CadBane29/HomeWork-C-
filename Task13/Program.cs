@@ -11,7 +11,7 @@
 // 32679 -> 6
 
 
-Console.WriteLine("Пользователь, введите число.");
+Console.WriteLine("Пользователь, введите число: ");
 int threeDigitNum = Convert.ToInt32(Console.ReadLine());
 
 int ThirdNumber (int number)
@@ -23,4 +23,5 @@ int ThirdNumber (int number)
     return number % 10;
 }
 int thirdNumber = ThirdNumber(threeDigitNum);
-Console.WriteLine(threeDigitNum < -100 || threeDigitNum > 100 ? $"В веденом вами числе третья цифра: {thirdNumber}" : "Такой цифры нет");
+Console.WriteLine(threeDigitNum < -100 || threeDigitNum > 100 ? $"В веденом вами числе третья цифра: {thirdNumber}" 
+: "Третьей цифры в вашем числе нет.");
