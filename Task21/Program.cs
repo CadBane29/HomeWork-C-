@@ -7,17 +7,17 @@
 
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-Console.WriteLine("Пользователь, введите координату первой точки: ");
+Console.WriteLine("Пользователь, введите координаты первой точки: ");
 double dotA = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Пользователь, введите координату второй точки: ");
+Console.WriteLine("Пользователь, введите координаты первой точки: ");
 double dotB = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Пользователь, введите координату третьей точки: ");
+Console.WriteLine("Пользователь, введите координаты первой точки: ");
 double dotС = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Пользователь, введите координату четвертой точки: ");
+Console.WriteLine("Пользователь, введите координаты второй точки: ");
 double dotD = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Пользователь, введите координату пятой точки: ");
+Console.WriteLine("Пользователь, введите координаты второй точки: ");
 double dotE = Convert.ToDouble(Console.ReadLine());
-Console.WriteLine("Пользователь, введите координату шестой точки: ");
+Console.WriteLine("Пользователь, введите координаты второй точки: ");
 double dotF = Convert.ToDouble(Console.ReadLine());
 
 double Distance(double pointA, double pointB, double pointC,
@@ -30,5 +30,5 @@ double Distance(double pointA, double pointB, double pointC,
     return distanceSpace;
 }
 double distance = Distance(dotA, dotB, dotС, dotD, dotE, dotF);
-double result = Math.Round(distance, 4, MidpointRounding.ToEven);
+double result = Math.Round(distance, 2, MidpointRounding.ToEven);
 Console.WriteLine($"Расстояние между указанными вами точками в 3D пространстве: {result}.");

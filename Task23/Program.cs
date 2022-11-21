@@ -10,27 +10,6 @@
 // 4 | 64
 // 5 | 125
 
-// int numberN = -1;
-// while(numberN < 1)
-// {
-//     Console.Write("Пользователь, введите число от одного до N: ");
-//     numberN = Convert.ToInt32(Console.ReadLine());
-//     if(numberN < 1) Console.WriteLine("Пользователь, введите корректное число!");
-// }
-
-// string NumberN (int numberCube)
-// {
-//     int counter = 1;
-//     string table = "";
-//     while (counter <= numberCube)
-//     {
-//         table = table + $"{counter} | {counter * counter * counter} \n";
-//         counter++;
-//     }
-//     return table;
-// }
-// string cubeNumber = NumberN(numberN);
-// Console.WriteLine(cubeNumber);
 
 int numberN = -1;
 while(numberN < 1)
