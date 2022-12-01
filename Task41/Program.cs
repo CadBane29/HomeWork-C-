@@ -44,7 +44,7 @@ int CheckNumberGreaterZero(int[] arr)
 int size = -1;
 while (size <= 0)
 {
-    Console.Write("Введите столько чисел, сколько вы хотите проверить: ");
+    Console.Write("Введите число элементов массива: ");
     size = Convert.ToInt32(Console.ReadLine());
     if(size <= 0) Console.WriteLine("Введите другой размер!");
 }
