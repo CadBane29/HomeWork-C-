@@ -7,17 +7,19 @@
 // 66(0,0,0) 27(0,0,1) 25(0,1,0) 90(0,1,1)
 // 34(1,0,0) 26(1,0,1) 41(1,1,0) 55(1,1,1)
 
-int[,,] CreateMatrix3DRndInt(int rows, int columns, int depth, int min, int max)
+int[,,] CreateMatrix3DInt(int rows, int columns, int depth, int min, int max)
 {
     int[,,] matrix3D = new int[rows, columns, depth];
-    Random rnd = new Random();
+    int number = 10;
+
     for (int i = 0; i < matrix3D.GetLength(0); i++)
     {
         for (int j = 0; j < matrix3D.GetLength(1); j++)
         {
             for (int k = 0; k < matrix3D.GetLength(2); k++)
             {
-                matrix3D[i, j, k] = rnd.Next(min, max + 1);
+                matrix3D[i, j, k] = number;
+                number += 1;
             }
         }
     }
@@ -42,7 +44,7 @@ void PrintMatrix3D(int[,,] matrix3D)
     }
 }
 
-void Print3DMatrix(int[,,]matrix3D)
+void Print3DMatrix(int[,,] matrix3D)
 {
     for (int i = 0; i < matrix3D.GetLength(0); i++)
     {
@@ -50,14 +52,14 @@ void Print3DMatrix(int[,,]matrix3D)
         {
             for (int k = 0; k < matrix3D.GetLength(2); k++)
             {
-                Console.Write($"{matrix3D[i,j,k]}({i},{j},{k}) ");
+                Console.Write($"{matrix3D[i, j, k]}({i},{j},{k}) ");
             }
         }
         Console.WriteLine();
     }
 }
 
-int[,,] matrix3D = CreateMatrix3DRndInt(2, 2, 2, 10, 99);
+int[,,] matrix3D = CreateMatrix3DInt(2, 2, 2, 10, 20);
 PrintMatrix3D(matrix3D);
 Console.WriteLine();
 Print3DMatrix(matrix3D);
